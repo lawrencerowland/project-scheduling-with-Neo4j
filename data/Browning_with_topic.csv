@@ -1,0 +1,26 @@
+"_id","_labels","name","_start","_end","_type"
+"0",":Person","Elizabeth",,,
+"1",":Letter","Elizabeth letter 1",,,
+"2",":Person","Robert",,,
+"3",":Letter","Robert letter 1",,,
+"4",":Letter","Elizabeth letter 2",,,
+"5",":Letter","Robert letter 2",,,
+"20",":Topic","Love",,,
+"21",":Topic","Uncertainty",,,
+"22",":Topic","Caution",,,
+"40",":Topic","Aimlessness",,,
+,,,"0","1","writes"
+,,,"1","2","sent_to"
+,,,"2","3","writes"
+,,,"3","0","sent_to"
+,,,"0","4","writes"
+,,,"4","2","sent_to"
+,,,"2","5","writes"
+,,,"5","0","sent_to"
+,,,"20","3","about"
+,,,"20","4","about"
+,,,"40","1","about"
+,,,"22","4","about"
+,,,"22","3","about"
+,,,"20","5","about"
+,,,"21","3","about"
