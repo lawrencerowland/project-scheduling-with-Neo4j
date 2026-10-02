@@ -28,6 +28,18 @@ What should the graph make explicit: the work, the conditions it produces, the p
 
 The scripts use historical constraint syntax; compatibility with current Neo4j has not been verified. No resource-constrained scheduling, simulation or optimisation result is established here.
 
-[2020 08 Highways.ipynb](2020%2008%20Highways.ipynb) is a separate historical machine-learning walkthrough, requiring a local P6 CSV absent from this repository. It is not an execution of these schema examples.
+## Highways delay prediction: a separate notebook
+
+*Notebook labelled August 2020; reading guidance added 2 October 2026.*
+
+[Read the pictured guide in the Library](https://lawrencerowland.github.io/ML-for-portfolios.html#highways-delay-notebook) · [Open the original notebook](2020%2008%20Highways.ipynb)
+
+Could completed A14 activities help predict finish variance for work that has not started? The notebook selects a 30 September 2019 reporting snapshot, separates completed from not-started activities, and tries both classification (`FinishDateVariance >= 5`) and regression of the variance itself. The field's units and sign convention are not established in the notebook; it does not predict activity duration.
+
+Its useful thread is the warning about information available at prediction time. Read from **Bring in data** through **Exploratory Data analyis**, then the classifier and regressor sections. The saved training-set comparisons are not a test on future work. DABL model-selection scores are also retained, but a separate test set and prediction-to-activity index checks remain unfinished. Cleaning precedes the completed/not-started split; feature availability and preparation need validation.
+
+The required local `P6Activities.csv` is absent. The notebook and its saved outputs are preserved unchanged and were not rerun for this guide. This tabular prediction experiment is separate from the graph-model examples above.
+
+## Other retained files
 
 The repository also preserves an [earlier activity-schema picture](images/Projects-as-tasks-arrows-tool-LR.png), a [tasks-and-resources-only diagram](images/2020%2002%20tasks%20and%20resources%20as%20nodes.png), an [Apple Pages note](2020%2002%20scheduling%20answer.pages), a [saved Quora PDF](Search%20-%20what%20would%20be%20a%20recommended%20algorithm%20-%20Quora.pdf), and separate Browning-letter [data](data/) and [images](images/). The Pages note and PDF have not been reviewed for this guide.
